@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC - Pomodoro  WIP [Control]</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<header>
+	<div class="juicy">Juicy!</div>
+	<div class="pt"><br>Pomodoro Timer</div>
+
+</header>
+
+<div class="glass">
+	<div class="glass3">
+		<div id="pomodoro"></div>
+		<div id="tomatoe"> <img src="http://i64.tinypic.com/2rrv539.png" alt="tomatoe"></div>
+	</div>
+	<div class="glass2"></div>
+</div>
+<div id="timeyBits">
+	<h2>Session</h2>
+	<table class="session">
+		<tr class="session">
+			<td id="squeezeMin">25:</td>
+			<td id="squeezeSec">00</td>
+		</tr>
+	</table>
+	<h2>Break</h2>
+	<table class="break">
+		<tr class="break">
+			<td id="drinkMin">05:</td>
+			<td id="drinkSec">00</td>
+		</tr>
+	</table>
+</div>
+
+<input type="range" min="5" max="3600" value="1500" class="squeezeSlide slider" id="squeeze">
+<input type="range" min="5" max="3600" value="300" class="drinkSlide slider" id="drink">
+
+<span id="squeezeSlideSet"></span>
+<br>
+<span id="drinkSlideSet"></span>
+
+<div class="buttonBits">
+	<button type="stop" class="glassbtn" onclick="stopJuicing()">Stop</button>
+	<button type="start" class="glassbtn" onclick="startCount()">Start</button>
+	<button type="reset" class="glassbtn" onclick="resetTomatoe()">Reset</button>
+</div>
+
+<div id="three2one"></div>
+<div id="drinkUp"></div>
+<div id="yummy"></div>
+
+<!-- I maked dis-->
+<div class="icon-bar">
+    <a href="https://codepen.io/L0TU5/full/YaoYeg/" target="_blank" title="Danielle C. Monroe © 2018"><i class="far fa-copyright"></i></a>
+    <a href="https://www.freecodecamp.org/l0tu5" title="DC's FCC" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+    <a href="https://codepen.io/L0TU5/" title="DC's CodePen" target="_blank"><i class="fab fa-codepen"></i></a>
+    <a href="https://github.com/L0TU5" title="DC's GitHub" target="_blank"><i class="fab fa-github-alt"></i></a>
+    <a href="www.linkedin.com/in/danielle-monroe" title="DC's LinkedIn" target="_blank"><i class ="fab fa-linkedin"></i></a>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
